@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure you have the CSS linked -->
+</head>
+<body>
+    <h1>Text-to-Speech Application</h1>
+    <textarea id="text-input" rows="10" cols="50" placeholder="Enter your text here..."></textarea><br>
+    
+    <label for="voice-select">Select Voice:</label>
+    <select id="voice-select">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+    <br><br>
+    
+    <button onclick="convertTextToSpeech()">Convert to Speech</button>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <style>/* styles.css */
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        textarea {
+            width: 100%;
+            max-width: 600px;
+            height: 150px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #1e1e1e; /* Darker textarea background */
+            color: #e0e0e0; /* Light text color */
+            resize: vertical;
+            margin-bottom: 15px;
+            transition: border-color 0.3s ease;
+        }
+        
+        textarea:focus {
+            border-color: #4CAF50; /* Highlight border color on focus */
+            outline: none;
+        }
+        
+        button {
+            background-color: #1e88e5; /* Blue button background */
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        button:hover {
+            background-color: #1565c0; /* Darker blue on hover */
+        }
+        
+        button:active {
+            transform: scale(0.98); /* Slight button press effect */
+        }
+        
+        .alert {
+            color: #ff1744; /* Red color for alerts */
+            margin-top: 10px;
+            text-align: center;
+        }
+        </style>
+</body>
+</html>
