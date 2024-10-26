@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from emotion_model import emotion_model, max_length  # Import the model
+from tortoise.models.emotion_model import emotion_model, max_length  # Import the model
 import pyttsx3
 import numpy as np
 from tensorflow.keras.preprocessing.sequence import pad_sequences
