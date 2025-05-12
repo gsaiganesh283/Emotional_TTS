@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px; /* Add space before the h1 heading */
+    margin-bottom: 20px; /* Add space under the h1 heading */
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px; /* Add space under the h2 heading */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.block {
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    border-radius: 8px;
+}
+
+textarea, select, input, button, audio {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #2e2e2e; /* Darker input background */
+    color: #e0e0e0; /* Light text color */
+    border: 1px solid #444; /* Dark border */
+    border-radius: 4px;
+    padding: 10px;
+}
+
+button {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
+canvas {
+    width: 100%;
+    background-color: #2e2e2e; /* Darker canvas background */
+    border: 1px solid #444; /* Dark border */
+    border-radius: 4px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.icon-link i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.icon-link span {
+    font-size: 18px;
+}
+
+.icon-link:hover {
+    color: #007BFF;
+}
